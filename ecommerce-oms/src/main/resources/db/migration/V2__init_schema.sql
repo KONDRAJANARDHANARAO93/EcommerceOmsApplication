@@ -28,7 +28,7 @@ CREATE TABLE order_items (
     price_at_order_time NUMERIC(10, 2) NOT NULL,
     CONSTRAINT fk_item_order
         FOREIGN KEY (order_id) REFERENCES orders (id),
-    CONSTRAINT fk_item_product=
+    CONSTRAINT fk_item_product
         FOREIGN KEY (product_id) REFERENCES products (id)
 );
 
